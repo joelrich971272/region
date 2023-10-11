@@ -106,21 +106,68 @@ public class Ihm {
                         zoneDep = new String("(53)Mayenne/(72)Sarthe");
                         break;
                     case 44 :
+                    case 49 :
+                    case 53 :
+                    case 72 :
+
                         zoneDep = new String("(44)Loire-Atlantique/(49)Maine-et-Loire/(53)Mayenne/(72)Sarthe(85)Vendée");
+                        break;
+                    case 47 :
+                        zoneDep = new String("(37)Indre-et-Loire");
+                        break;
+                    case 48 :
+                        zoneDep = new String("(18)Cher");
+                        break;
+                    case 50 :
+                    case 61 :
+                        zoneDep = new String("(14)Calvados/(50)Manche/(61)Orne");
+                        break;
+                    case 54 :
+                        zoneDep = new String("(36)Indre/(41)Loir-et-Cher");
+                        break;
+
+
                 }
 
                 break;
             case 3 :
                 zoneGeographique = new String("Region Nord Est ");
+                switch (digitDep){
+                    case 10 :
+                        zoneDep = new String("(08)Ardennes/(10)Aube/(51)Marne/(52)Haut-Marne");
+                        break;
+                    case 20 :
+                        zoneDep = new String("(59)Nord");
+                }
                 break;
             case 4 :
                 zoneGeographique = new String("Region Sud Est");
+                switch (digitDep){
+                    case 20 :
+                        zoneDep = new String("(2A)Corse-du-Sud");
+                        break;
+                    case 42 :
+                        zoneDep = new String("(13)Bouche-du-Rhone");
+                        break;
+                }
                 break;
             case 5 :
                 zoneGeographique = new String("Region Sud Ouest");
+                switch (digitDep){
+                    case 34 :
+                        zoneDep = new String("(31)Haute-Garonne");
+                        break;
+                    case 45 :
+                        zoneDep = new String("(16)Charente");
+                        break;
+                }
                 break;
             case 6 :
                 zoneGeographique = new String("Operateur mobile");
+                switch (digitDep){
+
+                }
+                break;
         }
         System.out.println(zoneGeographique + zoneDep);
     }
